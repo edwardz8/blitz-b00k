@@ -1,4 +1,4 @@
-<h1 *ngIf="authService.user | async">Welcome {{ (authService.user | async)?.email }}!</h1>
+<!-- <h1 *ngIf="authService.user | async">Welcome {{ (authService.user | async)?.email }}!</h1>
 
 <div *ngIf="!(authService.user | async)">
   <input matInput type="text" [(ngModel)]="email" placeholder="email">
@@ -15,4 +15,15 @@
 
 <button mat-raised-button (click)="logout()" *ngIf="authService.user | async">
   Logout
-</button>
+</button> -->
+
+<mat-card>
+<div *ngIf="afAuth.user | async as user; else showLogin">
+  <h1>Hello {{ user.displayName }}!</h1>
+  <button mat-raised-button (click)="logout()">Logout</button>
+</div>
+<ng-template #showLogin>
+  <p>Please login.</p>
+  <button mat-raised-button (click)="login()">Login</button>
+</ng-template>
+</mat-card>
