@@ -10,6 +10,15 @@ import { AuthService } from './auth/auth.service';
 import { environment } from '../environments/environment';
 import { AuthComponent } from './auth/auth.component';
 import { AppRoutingModule } from './app-routing.module';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import { RouterModule, Routes, } from '@angular/router';
+
+export const router: Routes = [
+  { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: 'auth', component: AuthComponent }
+ // { path: 'login', component: AuthComponent, canActivate: [AuthGuard] },
+ // { path: 'member', component: MemberComponent,  resolve: { data: UserResolver}},
+];
 
 @NgModule({
   declarations: [
@@ -21,10 +30,14 @@ import { AppRoutingModule } from './app-routing.module';
     MaterialModule,
     AppRoutingModule,
     FormsModule,
+    FlexLayoutModule,
     ReactiveFormsModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    RouterModule.forRoot(
+      router, { enableTracing: true }
+    )
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

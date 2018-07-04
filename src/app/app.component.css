@@ -1,0 +1,13 @@
+mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mat-menu-item {
+    color: white;
+    text-decoration: none;
+}
+
+mat-icon {
+    margin-right: .8rem;
+}

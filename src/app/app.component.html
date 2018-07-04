@@ -1,12 +1,16 @@
-<mat-toolbar class="fixed-header" color="primary">
+<mat-toolbar class="fixed-header" color="primary" fxLayout="row">
 
-  <span>
-    <mat-icon>import_contacts
+  <div>
+    <span>
+      <mat-icon>import_contacts
       </mat-icon>
-  </span>
+    </span>
+    <span routerLink="/" routerLinkActive="active">blitzbook</span>
+  </div>
 
-  <span>blitzbook</span>
-  </mat-toolbar>
+  <div>
+    <a class="mat-menu-item" mat-menu-item routerLink="/auth" routerLinkActive="active">login</a>
+  </div>
 
-  
-<app-auth></app-auth>
+</mat-toolbar>
+<router-outlet></router-outlet>
