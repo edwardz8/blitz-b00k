@@ -6,16 +6,20 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
-import { AuthService } from './auth.service';
+import { AuthService } from './auth/auth.service';
 import { environment } from '../environments/environment';
+import { AuthComponent } from './auth/auth.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
     MaterialModule,
+    AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
