@@ -1,0 +1,35 @@
+<div ng2-carouselamos class="slides-wrapper" [items]="items" [width]="900" [$prev]="prev" [$next]="next" [$item]="item" (onSelectedItem)="selectedItem = $event.item; selectedIndex = $event.index">
+</div>
+
+
+<ng-template #prev>
+  <img src="assets/images/arrow-left.png" id="left" />
+</ng-template>
+<ng-template #next>
+  <img src="assets/images/arrow-right.png" id="right" />
+</ng-template>
+<ng-template #item let-item let-i="index">
+
+  <div class="games">
+    <span class="game" *ngIf="i === selectedIndex">{{item.id}}</span>
+    <span class="game" *ngIf="i !== selectedIndex">{{item.id}}</span>
+    <div class="left-board">
+      <div>
+        <img src="{{ item.logo }}">
+        <span class="record">{{item.record}}</span>
+      </div>
+      <div>
+        <img src="{{ item.logo }}">
+        <span class="record">{{item.record}}</span>
+      </div>
+    </div>
+    <div class="right-board">
+      <span>{{item.kickoff}}</span>
+      <div class="game-score">
+        <span id="top-score">{{item.score1}}</span>
+        <span>{{item.score2}}</span>
+      </div>
+    </div>
+  </div>
+
+</ng-template>

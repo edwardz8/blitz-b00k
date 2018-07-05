@@ -13,6 +13,8 @@ import { AppRoutingModule } from './app-routing.module';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { RouterModule, Routes, } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 
 export const router: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
@@ -26,7 +28,8 @@ export const router: Routes = [
   declarations: [
     AppComponent,
     AuthComponent,
-    HomePageComponent
+    HomePageComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +38,7 @@ export const router: Routes = [
     FormsModule,
     FlexLayoutModule,
     ReactiveFormsModule,
+    Ng2CarouselamosModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
