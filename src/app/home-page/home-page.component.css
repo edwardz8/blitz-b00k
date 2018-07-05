@@ -1,0 +1,23 @@
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    margin: 1rem;
+    margin-top: 4rem;
+    height: 300px;
+}
+
+.left {
+    margin-left: 8rem;
+}
+
+mat-icon {
+    font-size: 20rem;
+}
+
+.footer {
+    background: #d3d3d3;
+    height: 16rem;
+}

@@ -12,10 +12,12 @@ import { AuthComponent } from './auth/auth.component';
 import { AppRoutingModule } from './app-routing.module';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { RouterModule, Routes, } from '@angular/router';
+import { HomePageComponent } from './home-page/home-page.component';
 
 export const router: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
-  { path: 'auth', component: AuthComponent }
+  { path: 'auth', component: AuthComponent },
+  { path: 'home', component: HomePageComponent }
  // { path: 'login', component: AuthComponent, canActivate: [AuthGuard] },
  // { path: 'member', component: MemberComponent,  resolve: { data: UserResolver}},
 ];
@@ -23,7 +25,8 @@ export const router: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    AuthComponent
+    AuthComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
