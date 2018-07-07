@@ -15,6 +15,7 @@ import { RouterModule, Routes, } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
+import { OddsComponent } from './odds/odds.component';
 
 export const router: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
@@ -29,7 +30,8 @@ export const router: Routes = [
     AppComponent,
     AuthComponent,
     HomePageComponent,
-    CarouselComponent
+    CarouselComponent,
+    OddsComponent
   ],
   imports: [
     BrowserModule,
