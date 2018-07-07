@@ -16,11 +16,13 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { OddsComponent } from './odds/odds.component';
+import { AboutComponent } from './about/about.component';
 
 export const router: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
   { path: 'auth', component: AuthComponent },
-  { path: 'home', component: HomePageComponent }
+  { path: 'home', component: HomePageComponent },
+  { path: 'about', component: AboutComponent }
  // { path: 'login', component: AuthComponent, canActivate: [AuthGuard] },
  // { path: 'member', component: MemberComponent,  resolve: { data: UserResolver}},
 ];
@@ -31,7 +33,8 @@ export const router: Routes = [
     AuthComponent,
     HomePageComponent,
     CarouselComponent,
-    OddsComponent
+    OddsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

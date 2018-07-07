@@ -1,4 +1,4 @@
-<mat-toolbar class="fixed-header" color="primary" fxLayout="row">
+<mat-toolbar class="fixed-header" fxLayout="row">
 
   <div>
     <span>
@@ -9,11 +9,25 @@
   </div>
 
   <div>
+    <a class="mat-menu-item" mat-menu-item routerLink="/about" routerLinkActive="active">about</a>
     <a class="mat-menu-item" mat-menu-item routerLink="/auth" routerLinkActive="active">login</a>
   </div>
 
 </mat-toolbar>
 <router-outlet></router-outlet>
 
-<app-home-page>
-</app-home-page>
+<app-carousel></app-carousel>
+<app-odds></app-odds>
+
+<div class="footer">
+    <div class="footer-links">
+        <h2 class="bottom-bb-title">blitzbook</h2>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Odds</li>
+          <li>Profiles</li>
+          <li>Sign Up</li>
+        </ul>
+    </div>
+  </div>
