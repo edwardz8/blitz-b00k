@@ -1,11 +1,14 @@
 mat-toolbar {
   display: flex;
   justify-content: space-between;
-  background-color: #a8a8a8;
+  background-color: white;
+  /*  background-color: rgba(0, 0, 0, 0.83); */
+  /*   background-color: #a8a8a8;
+ */
 }
 
 .mat-menu-item {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 

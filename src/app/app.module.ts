@@ -17,6 +17,9 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { OddsComponent } from './odds/odds.component';
 import { AboutComponent } from './about/about.component';
+import { BetDialogComponent } from './bet-dialog/bet-dialog.component';
+import { MatDialogModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 export const router: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
@@ -31,9 +34,10 @@ export const router: Routes = [
   declarations: [
     AppComponent,
     AuthComponent,
+    OddsComponent,
+    BetDialogComponent,
     HomePageComponent,
     CarouselComponent,
-    OddsComponent,
     AboutComponent
   ],
   imports: [
@@ -41,6 +45,8 @@ export const router: Routes = [
     MaterialModule,
     AppRoutingModule,
     FormsModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
     FlexLayoutModule,
     ReactiveFormsModule,
     Ng2CarouselamosModule,
@@ -52,6 +58,7 @@ export const router: Routes = [
     )
   ],
   providers: [AuthService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [BetDialogComponent]
 })
 export class AppModule { }

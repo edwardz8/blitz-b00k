@@ -1,0 +1,14 @@
+mat-icon {
+  font-size: 3rem;
+}
+
+mat-dialog-content {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+mat-dialog-actions {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: space-between;
+}

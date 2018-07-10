@@ -4,6 +4,7 @@ import {
     MatCardModule,
     MatFormFieldModule,
     MatIconModule,
+    MatDialogModule,
     MatInputModule,
     MatMenuModule,
     MatSelectModule,
@@ -22,6 +23,7 @@ import { MatTabsModule } from '@angular/material/tabs';
         MatTabsModule,
         MatListModule,
         MatFormFieldModule,
+        MatDialogModule,
         MatSelectModule,
         MatInputModule
     ],
@@ -34,6 +36,7 @@ import { MatTabsModule } from '@angular/material/tabs';
         MatTabsModule,
         MatListModule,
         MatFormFieldModule,
+        MatDialogModule,
         MatSelectModule,
         MatInputModule
     ]
