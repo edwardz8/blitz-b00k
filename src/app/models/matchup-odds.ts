@@ -1,4 +1,4 @@
-export interface Matchup {
+export interface MatchupOdds {
     ID: string;
     HomeTeam: string;
     AwayTeam: string;

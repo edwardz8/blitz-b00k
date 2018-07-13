@@ -4,11 +4,13 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
+import { FirebaseAuth } from '../../../node_modules/angularfire2';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
+  // authState: FirebaseAuthState = null;
   user: Observable<firebase.User>;
 
   constructor(private firebaseAuth: AngularFireAuth, private router: Router) {
@@ -43,6 +45,19 @@ export class AuthService {
     this.firebaseAuth
       .auth
       .signOut();
+  }
+
+  /* firebaseAuth.auth.subscribe((auth) => {
+  this.authState = auth;
+ });
+ */
+
+  get authenticated(): boolean {
+    return this.firebaseAuth.authState !== null;
+  }
+
+  get currentUser(): any {
+    return this.authenticated ? this.firebaseAuth.auth : null;
   }
 
 }

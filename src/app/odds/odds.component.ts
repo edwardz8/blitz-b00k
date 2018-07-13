@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { OddsService } from '../services/odds.service';
 import { MatDialog, MatDialogRef } from '@angular/material';
 import { BetDialogComponent } from '../bet-dialog/bet-dialog.component';
+import { MatchupOdds } from '../models/matchup-odds';
 
 @Component({
   selector: 'app-odds',
@@ -9,7 +10,7 @@ import { BetDialogComponent } from '../bet-dialog/bet-dialog.component';
   styleUrls: ['./odds.component.css']
 })
 export class OddsComponent implements OnInit {
-  // odds: Odds;
+  odds: MatchupOdds;
   PlaceBetDialogRef: MatDialogRef<BetDialogComponent>;
 
   constructor(private oddsService: OddsService, public dialog: MatDialog) { }
@@ -18,7 +19,7 @@ export class OddsComponent implements OnInit {
     this.oddsService.getOdds().subscribe(() => {
       //
     });
-  }
+    }
 
   openDialog() {
     this.dialog.open(BetDialogComponent, {

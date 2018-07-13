@@ -14,14 +14,12 @@ export class OddsService {
     })
   };
 
-  constructor(protected http: HttpClient) { }
+  constructor(protected http: HttpClient) {}
 
   getOdds(): Observable<any> {
     return this.http.get(`https://api.jsonodds.com//api/odds/mlb`, this.httpOptions);
   }
 }
-
-
 
 /* Example Requests
 
