@@ -2,31 +2,28 @@
 
   <div>
     <span>
-      <mat-icon>import_contacts
+      <mat-icon>bookmark
       </mat-icon>
     </span>
-    <span routerLink="/" routerLinkActive="active">blitzbook</span>
+    <span routerLink="/boards" routerLinkActive="active">bannerbets</span>
   </div>
 
-  <div>
-    <a class="mat-menu-item" mat-menu-item routerLink="/about" routerLinkActive="active">about</a>
-    <a class="mat-menu-item" mat-menu-item routerLink="/auth" routerLinkActive="active">login</a>
+  <div class="menu-items">
+      <a class="mat-menu-item" mat-menu-item routerLink="/users" routerLinkActive="active">users</a>
+    <a class="mat-menu-item" mat-menu-item routerLink="/boards" routerLinkActive="active">odds</a>
+    <a class="mat-menu-item" mat-menu-item routerLink="/login" routerLinkActive="active">login</a>
+
   </div>
 
 </mat-toolbar>
 <router-outlet></router-outlet>
 
-<!-- <app-carousel></app-carousel> -->
-<app-odds></app-odds>
-
+  
 <div class="footer">
     <div class="footer-links">
-        <h2 class="bottom-bb-title">blitzbook</h2>
+        <h2 class="bottom-bb-title">bannerbets</h2>
         <ul>
-          <li>Home</li>
-          <li>About</li>
           <li>Odds</li>
-          <li>Profiles</li>
           <li>Sign Up</li>
         </ul>
     </div>

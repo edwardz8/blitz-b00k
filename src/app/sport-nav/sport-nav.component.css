@@ -1,0 +1,15 @@
+.nav-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    margin-bottom: -2rem;
+}
+
+mat-chip {
+    width: 7rem;
+    height: 3rem;
+}
+
+.fas {
+    margin-right: 1.4rem;
+}

@@ -23,17 +23,9 @@ export class OddsService {
 
 /* Example Requests
 
-Get all odds for a sport
-curl -X GET https://jsonodds.com/api/odds/ncaaf -H "x-api-key: 7e35d68d-816f-11e8-91fa-06aae780a1ef" -L
-
 Get all odds for game durations only
-curl -X GET https://jsonodds.com/api/odds/{string: sport}?oddType=Game -H "x-api-key: 7e35d68d-816f-11e8-91fa-06aae780a1ef" -L
+curl -X GET https://jsonodds.com/api/odds/{string: sport}?oddType=Game -H "x-api-key: " -L
 */
-
-
- /* Available Calls */
-
-  // getOddsBySport
 
   // getOddTypes
 

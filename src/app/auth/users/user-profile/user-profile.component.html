@@ -1,3 +1,15 @@
-<p>
-  user-profile works!
-</p>
+<div class="profile">
+<!-- <img [src]="user.img" width="50px"> -->
+
+  <div *ngIf="isFollowing; then unfollowButton else followButton">
+    button renders here
+  </div>
+</div>
+
+<ng-template #followButton>
+  <button mat-raised-button (click)="toggleFollow()">Follow</button>
+</ng-template>
+
+<ng-template #unfollowButton>
+    <button mat-raised-button (click)="toggleFollow()">Unfollow</button>
+</ng-template>

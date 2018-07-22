@@ -1,15 +1,18 @@
+
 mat-toolbar {
   display: flex;
   justify-content: space-between;
   background-color: white;
-  /*  background-color: rgba(0, 0, 0, 0.83); */
-  /*   background-color: #a8a8a8;
- */
 }
 
 .mat-menu-item {
   color: black;
   text-decoration: none;
+  margin-right: 1rem;
+}
+
+.mat-menu-item:hover {
+  background: none;
 }
 
 mat-icon {
@@ -19,6 +22,7 @@ mat-icon {
 .footer {
   background: #d3d3d3;
   height: 16rem;
+  bottom: 0;
 }
 
 .footer-links {
@@ -28,9 +32,13 @@ mat-icon {
 
 ul {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .bottom-bb-title {
-  color: white;
+  color: black;
+}
+
+.menu-items {
+  display: flex;
 }

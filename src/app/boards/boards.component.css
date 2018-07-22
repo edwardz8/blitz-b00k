@@ -1,0 +1,82 @@
+.flex-container {
+  display: flex;
+  padding: 0;
+  margin: 1rem;
+  margin-top: 5rem;
+  list-style: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+
+img {
+  max-width: 3rem;
+  max-height: 3rem;
+}
+
+.bet-card-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+mat-card {
+  border-radius: .2rem;
+  margin: 1rem;
+  background-color: #f6f6f6;
+  width: 18rem;
+  font-size: 1rem;
+}
+
+mat-card:hover {
+  box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.48);
+  background-color: #f2f2f2;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+#moneyline {
+  margin-left: 1rem;
+}
+
+#save-bet {
+  background-color: #a8a8a8;
+}
+
+#comment-btn {
+  width: 8rem;
+  height: 3rem;
+  border-radius: 0;
+}
+
+/*
+About page styles
+
+.container {
+    margin-top: 3rem;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    margin: 1rem;
+    margin-top: 4rem;
+    height: 300px;
+}
+
+.left {
+    margin-left: 8rem;
+    margin-top: 7rem;
+}
+
+mat-icon {
+    font-size: 20rem;
+} */

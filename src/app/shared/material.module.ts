@@ -6,12 +6,15 @@ import {
     MatIconModule,
     MatDialogModule,
     MatInputModule,
+    MatChipsModule,
     MatMenuModule,
     MatSelectModule,
     MatToolbarModule,
 } from '@angular/material';
 import { MatListModule } from '@angular/material/list';
 import { MatTabsModule } from '@angular/material/tabs';
+import {MatExpansionModule} from '@angular/material/expansion';
+
 
 @NgModule({
     imports: [
@@ -20,7 +23,9 @@ import { MatTabsModule } from '@angular/material/tabs';
         MatToolbarModule,
         MatIconModule,
         MatCardModule,
+        MatChipsModule,
         MatTabsModule,
+        MatExpansionModule,
         MatListModule,
         MatFormFieldModule,
         MatDialogModule,
@@ -33,9 +38,11 @@ import { MatTabsModule } from '@angular/material/tabs';
         MatToolbarModule,
         MatIconModule,
         MatCardModule,
+        MatExpansionModule,
         MatTabsModule,
         MatListModule,
         MatFormFieldModule,
+        MatChipsModule,
         MatDialogModule,
         MatSelectModule,
         MatInputModule
