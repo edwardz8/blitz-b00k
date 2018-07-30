@@ -3,7 +3,7 @@
       <div class="bet-card-top">
         <img src="assets/images/vandy.png" mat-card-sm-image>
         <mat-card-content>
-          <p>NBC - 7:45</p>
+          <p>O/U</p>
           <strong>
             <p id="moneyline">-110</p>
           </strong>
@@ -26,7 +26,9 @@
         <button mat-icon-button (click)="toggleComments()" id="comment-btn">
           <mat-icon>keyboard_arrow_down</mat-icon> Comment
         </button>
-          
+
+<!--         <app-comments></app-comments> -->  
+        
         <button mat-icon-button (click)="toggleBookmark()">
           <mat-icon>{{ isBookmarked ? 'bookmark' : 'bookmark_outline' }}</mat-icon>
         </button>

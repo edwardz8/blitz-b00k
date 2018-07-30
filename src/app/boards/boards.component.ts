@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { OddsService } from '../services';
 import { AngularFireDatabase } from 'angularfire2/database';
-import { MatchupOdds } from '../models/matchup-odds';
+import { GameOdds } from '../models/game-odds';
 
 @Component({
   selector: 'app-boards',
@@ -10,7 +10,7 @@ import { MatchupOdds } from '../models/matchup-odds';
   styleUrls: ['./boards.component.css']
 })
 export class BoardsComponent implements OnInit {
-  @Input() odds: MatchupOdds;
+  @Input() gameOdds: GameOdds;
   // PlaceBetDialogRef: MatDialogRef<BetDialogComponent>;
 
   isBookmarked = false;

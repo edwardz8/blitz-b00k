@@ -19,9 +19,14 @@ mat-icon {
   margin-right: .8rem;
 }
 
+.menu-items {
+  display: flex;
+  justify-content: space-around;
+}
+
 .footer {
   background: #d3d3d3;
-  height: 16rem;
+  height: 3rem;
   bottom: 0;
 }
 
@@ -30,15 +35,6 @@ mat-icon {
   margin-right: 1rem;
 }
 
-ul {
-  text-decoration: none;
-  color: black;
-}
-
 .bottom-bb-title {
   color: black;
-}
-
-.menu-items {
-  display: flex;
 }
